@@ -14,5 +14,6 @@ public class Exercicio2 {
         } else{
             System.out.println("Você não pode votar!");
         }
+        scanner.close();
     }
 }

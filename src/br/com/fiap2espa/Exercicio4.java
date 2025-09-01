@@ -10,6 +10,7 @@ public class Exercicio4 {
 
         int resultado_fatorial = fatorial(user_fatorial);
         System.out.println("A fatorial de " + user_fatorial + " é " + resultado_fatorial);
+        scanner.close();
     }
      static int fatorial(int input_fatorial){
         int result = 1;

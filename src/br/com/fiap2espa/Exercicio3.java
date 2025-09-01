@@ -13,5 +13,6 @@ public class Exercicio3 {
             System.out.println(numero_loop);
             numero_loop++;
         }
+        scanner.close();
     }
 }
