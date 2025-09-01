@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Exercicio8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Insira a sua altura: ");
+        System.out.println("Insira a sua altura em metros: ");
         double user_altura = scanner.nextDouble();
         scanner.nextLine();
 
-        System.out.println("Insira o seu peso: ");
+        System.out.println("Insira o seu peso em kilos: ");
         double user_peso = scanner.nextDouble();
         scanner.nextLine();
         double IMC = user_peso/user_altura;
