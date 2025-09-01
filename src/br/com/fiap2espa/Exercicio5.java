@@ -18,5 +18,6 @@ public class Exercicio5 {
             }
         }
         System.out.println("Há " + PAR + " números pares e " + IMPAR + " números impares");
+        scanner.close();
     }
 }
