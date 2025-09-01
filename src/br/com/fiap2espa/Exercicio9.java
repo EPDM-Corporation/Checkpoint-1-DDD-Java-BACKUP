@@ -16,7 +16,7 @@ public class Exercicio9 {
         scanner.nextLine();
 
         double result = media(user_a,user_b,user_c);
-        System.out.println("O resultado da média é " + result);
+        System.out.println("A média é  " + result);
     }
     static double media(double a, double b, double c){
          return (a + b + c)/3;

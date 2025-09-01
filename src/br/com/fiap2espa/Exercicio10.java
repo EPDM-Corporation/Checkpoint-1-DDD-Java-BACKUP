@@ -22,10 +22,11 @@ public class Exercicio10 {
             double result = user_preco/2;
             System.out.println("Você vai pagar em 2x Parcelado R$ " + result );
         } else if (user_opcao == PARCELADO3){
-            double result = (user_preco/4) * 1.08;
+            double result = (user_preco * 1.08)/4 ;
             System.out.println("Você vai pagar cada parcela de 4x com 8% de juros: R$" + result);
         }else{
             System.out.println("Não foi entendido a forma de pagamento");
         }
+        scanner.close();
     }
 }
