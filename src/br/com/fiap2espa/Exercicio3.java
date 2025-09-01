@@ -5,13 +5,16 @@ import java.util.Scanner;
 public class Exercicio3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Insira um número inteiro: ");
-        int numero = scanner.nextInt();
+        System.out.println("Insira o primeiro número: ");
+        int numero1 = scanner.nextInt();
         scanner.nextLine();
-        int numero_loop = 0;
-        while (numero_loop <= numero){
-            System.out.println(numero_loop);
-            numero_loop++;
+        System.out.println("Insira o segundo número: ");
+        int numero2 = scanner.nextInt();
+        scanner.nextLine();
+
+        while (numero1 <= numero2){
+            System.out.println(numero1);
+            numero1++;
         }
         scanner.close();
     }
