@@ -12,7 +12,7 @@ public class Exercicio8 {
         System.out.println("Insira o seu peso em kilos: ");
         double user_peso = scanner.nextDouble();
         scanner.nextLine();
-        double IMC = user_peso/user_altura;
+        double IMC = user_peso/(user_altura * user_altura);
 
         if (IMC < 18.5){
             System.out.println("Seu IMC é " + IMC + " e a classificação é: abaixo do peso");
