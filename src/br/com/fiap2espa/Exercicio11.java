@@ -12,9 +12,7 @@ public class Exercicio11 {
         String nome3 = inputNome(scanner);
         int idade3 = inputIdade(scanner);
 
-        compararIdade(idade1, nome1, idade2, idade3);
-        compararIdade(idade2, nome2, idade1, idade3);
-        compararIdade(idade3, nome3, idade1, idade2);
+        encontrarVelha(nome1,idade1, nome2,idade2,nome3,idade3);
 
     }
     static String inputNome(Scanner s){
@@ -29,9 +27,13 @@ public class Exercicio11 {
         s.nextLine();
         return idade;
     }
-    static void compararIdade(int a, String name,int b, int c){
-        if(a > b && a > c){
-            System.out.println("A pessoa mais velha é " + name);
+    static void encontrarVelha(String nome1, int idade1, String nome2, int idade2, String nome3, int idade3){
+        if(idade1 >= idade2 && idade1 >= idade3){
+            System.out.println("A pessoa mais velha é " + nome1);
+        } else if (idade2 >= idade1 && idade2 >= idade3){
+            System.out.println("A pessoa mais velha é " + nome2);
+        } else {
+            System.out.println("A pessoa mais velha é " + nome3);
         }
     }
 }
