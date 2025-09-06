@@ -11,11 +11,18 @@ public class Exercicio3 {
         System.out.println("Insira o segundo número: ");
         int numero2 = scanner.nextInt();
         scanner.nextLine();
-
-        while (numero1 <= numero2){
-            System.out.println(numero1);
-            numero1++;
+        if (numero1 <= numero2){
+            while (numero1 <= numero2){
+                System.out.println(numero1);
+                numero1++;
+            }
+        } else{
+            while (numero2 <= numero1){
+                System.out.println(numero2);
+                numero2++;
+            }
         }
+
         scanner.close();
     }
 }
